@@ -6,4 +6,6 @@ object Constants {
 
     const val KW_DOMINANT_COLOR = "dominantColor"
     const val KW_POKEMON_NAME = "pokemonName"
+
+    const val BASE_URL = "https://pokeapi.co/api/v2/"
 }
