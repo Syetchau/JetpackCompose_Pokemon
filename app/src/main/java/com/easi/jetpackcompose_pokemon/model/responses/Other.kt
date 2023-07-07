@@ -1,7 +1,9 @@
 package com.easi.jetpackcompose_pokemon.model.responses
 
+import com.google.gson.annotations.SerializedName
+
 data class Other(
     val dream_world: DreamWorld,
     val home: Home,
-    val official-artwork: OfficialArtwork
+    @SerializedName("official-artwork") val officialArtwork: OfficialArtwork
 )
