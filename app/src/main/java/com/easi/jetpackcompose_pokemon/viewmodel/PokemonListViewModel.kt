@@ -91,6 +91,7 @@ class PokemonListViewModel @Inject constructor(private val repository: PokemonRe
                     loadError.value = result.message!!
                     isLoading.value = false
                 }
+                is Resource.Loading -> { }
             }
         }
     }
