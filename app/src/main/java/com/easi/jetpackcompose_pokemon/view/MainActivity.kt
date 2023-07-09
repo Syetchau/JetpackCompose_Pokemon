@@ -10,7 +10,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.easi.jetpackcompose_pokemon.constants.Constants
+import com.easi.jetpackcompose_pokemon.utils.Constants
 import com.easi.jetpackcompose_pokemon.ui.theme.JetpackCompose_PokemonTheme
 import com.easi.jetpackcompose_pokemon.view.pokemonList.PokemonListScreen
 import dagger.hilt.android.AndroidEntryPoint
@@ -32,7 +32,7 @@ class MainActivity : ComponentActivity() {
                         PokemonListScreen(navController = navController)
                     }
                     composable(
-                        route = "${Constants.ROUTE_POKEMON_DETAIL}/{${Constants.KW_DOMINANT_COLOR}}/{${Constants.KW_POKEMON_NAME}}/",
+                        route = "${Constants.ROUTE_POKEMON_DETAIL}/${Constants.KW_DOMINANT_COLOR}/${Constants.KW_POKEMON_NAME}/",
                         arguments = listOf(
                             navArgument(Constants.KW_DOMINANT_COLOR) {
                                 type = NavType.IntType

@@ -1,7 +1,7 @@
 package com.easi.jetpackcompose_pokemon.di
 
 import com.easi.jetpackcompose_pokemon.api.Api
-import com.easi.jetpackcompose_pokemon.constants.Constants.BASE_URL
+import com.easi.jetpackcompose_pokemon.utils.Constants.BASE_URL
 import com.easi.jetpackcompose_pokemon.repository.PokemonRepository
 import dagger.Module
 import dagger.Provides
