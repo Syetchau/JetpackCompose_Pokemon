@@ -3,4 +3,5 @@
 `
     <string name="hint_search">Search...</string>
     <string name="action_retry">Retry</string>
+    <string name="label_base_stat">Base stats:</string>
 </resources>
